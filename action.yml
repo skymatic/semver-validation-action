@@ -1,8 +1,8 @@
-name: 'SEMVER validator'
-description: 'Validate SEMVER version'
+name: 'SemVer Validation Action'
+description: 'Validate SemVer'
 inputs:
   version:  # id of input
-    description: 'Who to greet'
+    description: 'Version'
     required: true
     default: '0.0.0'
 outputs:
