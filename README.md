@@ -1,6 +1,6 @@
 # Semver validation action
 
-SEMVER validator based on [`rubenesp87/semver-validation-action`](https://github.com/rubenesp87/semver-validation-action) but case-insensitive.
+SEMVER validator based on [`rubenesp87/semver-validation-action`](https://github.com/rubenesp87/semver-validation-action) but with official [regex taken from semver.org](https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string).
 
 ## Inputs
 
