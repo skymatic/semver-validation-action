@@ -12,10 +12,11 @@ jobs:
         with:
           version: '1.7.0-alpha1'
       - name: Run the action with failure
+        id: failingStep
         continue-on-error: true
         uses: ./
         with:
           version: '1.A.0'
-      - name: Expected previous action run to FAIL
-        if: ${{ success() }}
+      - name: Check if previous action run has outcome 'failure'
+        if: ${{ steps.failingStep.outcome != 'failure' }}
         run: exit 1
