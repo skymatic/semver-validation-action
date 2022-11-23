@@ -1,0 +1,21 @@
+on: push
+
+name: Tests the action
+jobs:
+  run_action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run the action with success
+        uses: ./
+        with:
+          version: '1.7.0-alpha1'
+      - name: Run the action with failure
+        continue-on-error: true
+        uses: ./
+        with:
+          version: '1.A.0'
+      - name: Expected previous action run to FAIL
+        if: ${{ success() }}
+        run: exit 1
