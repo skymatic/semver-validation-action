@@ -1,6 +1,6 @@
 {
   "name": "semver-validation-action",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Validate a SEMVER version.",
   "main": "index.js",
   "scripts": {
