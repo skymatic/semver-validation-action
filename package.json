@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/eb-rubenespinosa/semver-validation-action#readme",
   "dependencies": {
-    "@actions/core": "^1.10.0",
-    "@actions/github": "^2.2.0"
+    "@actions/core": "^1.10.0"
   }
 }
