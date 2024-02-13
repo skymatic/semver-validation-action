@@ -11,19 +11,19 @@ SEMVER validator based on [`rubenesp87/semver-validation-action`](https://github
 ## Example usage
 
 ```yaml
-uses: skymatic/semver-validation-action@v1
+uses: skymatic/semver-validation-action@v3
 with:
   version: ${{ github.event.release.tag_name }}
 ```
 
 ```yaml
-uses: skymatic/semver-validation-action@v1
+uses: skymatic/semver-validation-action@v3
 with:
   version: 'v0.7.9'
 ```
 
 ```yaml
-uses: skymatic/semver-validation-action@v1
+uses: skymatic/semver-validation-action@v3
 with:
   version: '0.7.9-beta.1'
 ```
